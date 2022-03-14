@@ -1,6 +1,6 @@
 # mini_wallet_exercise
 
-CLONE the project by using Git clone <git link>
+CLONE the project by using Git clone "git link"
 
 you have to setup virtual environment to install all the respective packages by Python -m venv virtualenvironment
  
