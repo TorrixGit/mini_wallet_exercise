@@ -1,9 +1,6 @@
 from rest_framework.views import APIView
-from backend.services import (
-    initialise_wallet, view_wallet, disable_wallet)
-from backend.services import transaction_wallet
-from backend.serializers import (
-    InitSerializer, TransactionRequestSerializer, DisableWalletRequestSerializer)
+from backend.services import initialise_wallet, view_wallet, disable_wallet, transaction_wallet
+from backend.serializers import InitSerializer, TransactionRequestSerializer, DisableWalletRequestSerializer
 from rest_framework.response import Response
 
 class InitialiseWallet(APIView):

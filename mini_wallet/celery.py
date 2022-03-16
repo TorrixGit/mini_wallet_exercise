@@ -1,11 +1,10 @@
 import os
-
-from celery import Celery
+#from celery import celery
 
 # Set the default Django settings module for the 'celery' program.
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'miniwallet.settings')
 
-app = Celery('miniwallet')
+app = ('miniwallet')
 
 # Using a string here means the worker doesn't have to serialize
 # the configuration object to child processes.

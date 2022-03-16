@@ -1,5 +1,6 @@
 from django.db import models
 from rest_framework.authtoken.models import Token
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -13,10 +14,7 @@ class wallet(models.Model):
     status = models.BooleanField(default=False)
 
 class transaction(models.Model):
-   TRANSACTION_CHOICES = (
-        ('Deposit', 'deposit'),
-        ('Withdraw', 'withdraw')
-    )
+    TRANSACTION_CHOICES = (('Deposit', 'deposit'),('Withdraw', 'withdraw'))
     transaction_type = models.CharField(max_length=50, choices=TRANSACTION_CHOICES)
     transaction_by = models.ForeignKey(Account, on_delete=models.DO_NOTHING)
     amount = models.DecimalField(max_digits=20, decimal_places=3)

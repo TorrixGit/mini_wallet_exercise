@@ -1,9 +1,7 @@
-from walletapp.tasks import update_wallet_balance
+from backend.tasks import update_wallet_balance
 from django.contrib.auth.models import User
-from walletapp.serializers import (
-    WalletTransactionSerializer,
-    WalletResponseSerializer)
-from walletapp.models import Wallet, Account, Transaction
+from backend.serializers import WalletTransactionSerializer,WalletResponseSerializer
+from backend.models import Wallet, Account, Transaction
 from rest_framework.authtoken.models import Token
 from django.db import transaction
 
