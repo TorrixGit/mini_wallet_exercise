@@ -1,5 +1,5 @@
 import os
-#from celery import celery
+import celery
 
 # Set the default Django settings module for the 'celery' program.
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'miniwallet.settings')

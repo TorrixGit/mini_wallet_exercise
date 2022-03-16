@@ -5,7 +5,6 @@ from backend.models import Wallet, Account, Transaction
 from rest_framework.authtoken.models import Token
 from django.db import transaction
 
-
 def build_response(status, data):
     response = {
         'status': status,

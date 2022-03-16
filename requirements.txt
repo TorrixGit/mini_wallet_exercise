@@ -14,4 +14,4 @@ tzlocal==2.1
 uuid==1.30
 vine==5.0.0
 wcwidth==0.2.5
-zipp==3.6.0
+zipp==3.6

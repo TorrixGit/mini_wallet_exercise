@@ -3,7 +3,6 @@ from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import User
 
 # Create your models here.
-
 class Account(models.Model):
     customer_xid = models.CharField(max_length=50, unique=True)
     User = models.OneToOneField(User, on_delete=models.DO_NOTHING)

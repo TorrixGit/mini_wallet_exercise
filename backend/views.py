@@ -3,6 +3,7 @@ from backend.services import initialise_wallet, view_wallet, disable_wallet, tra
 from backend.serializers import InitSerializer, TransactionRequestSerializer, DisableWalletRequestSerializer
 from rest_framework.response import Response
 
+
 class InitialiseWallet(APIView):
 
     def post(self, request):
